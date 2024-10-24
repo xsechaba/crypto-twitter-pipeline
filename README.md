@@ -1,6 +1,6 @@
 # Crypto Twitter Data Pipeline
 
-Project Overview
+# Project Overview
 
 The **Crypto Twitter Data Pipeline** is an automated solution to extract, clean, store, and analyze data from Twitter related to cryptocurrency topics, specifically targeting meme coins, moonshots, and other trending tokens. The objective is to identify trending cryptocurrencies and their sentiment, using the collected data to discover potential high-growth tokens.
 
@@ -84,7 +84,7 @@ Setup
    - `analyze_trends.py` performs analysis on hashtags and identifies trending coins.
    - The analysis results are saved as CSV files.
    
-# Files to Include in GitHub
+# File Structure
 
 - **DAGs**: `dags/crypto_twitter_dag.py`
 - **Scripts**:
