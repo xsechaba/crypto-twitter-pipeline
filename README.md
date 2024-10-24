@@ -6,6 +6,10 @@ The **Crypto Twitter Data Pipeline** is an automated solution to extract, clean,
 
 The data pipeline utilizes the Twitter API (via RapidAPI) to extract tweets, applies data cleaning and sentiment analysis, and stores the cleaned data for further analysis, including hashtag frequency and trending coin analysis. The pipeline is orchestrated by Apache Airflow for scheduled execution.
 
+## Project Architecture
+
+![Crypto Twitter Data Pipeline Architecture](assets/Crypto%20Twitter%20Data%20Pipeline%20Architecture.jpg)
+
 ## Project Structure
 
 The project contains the following major components:
