@@ -15,10 +15,10 @@ The data pipeline utilizes the Twitter API (via RapidAPI) to extract tweets, app
 The project contains the following major components:
 
 - **Scripts**
-  - `extract_tweets.py`: Extracts cryptocurrency-related tweets from Twitter via the RapidAPI service.
-  - `clean_tweets.py`: Cleans the extracted tweets by removing unwanted characters and extracting key information.
-  - `store_tweets.py`: Stores cleaned tweets into a database for further analysis.
-  - `analyze_trends.py`: Analyzes the hashtag frequency and identifies trending coins.
+  - `extract_crypto_tweets.py`: Extracts cryptocurrency-related tweets from Twitter via the RapidAPI service.
+  - `clean_crypto_tweets.py`: Cleans the extracted tweets by removing unwanted characters and extracting key information.
+  - `store_crypto_tweets.py`: Stores cleaned tweets into a database for further analysis.
+  - `analyze_crypto_trends.py`: Analyzes the hashtag frequency and identifies trending coins.
 - **Docker Setup**
   - The project uses Docker to set up a consistent environment for running Airflow and the PostgreSQL database.
 - **Apache Airflow DAG**
@@ -71,32 +71,32 @@ Setup
 
 1. **Extract Tweets**
 
-   - `extract_tweets.py` collects relevant cryptocurrency tweets using RapidAPI.
+   - `extract_crypto_tweets.py` collects relevant cryptocurrency tweets using RapidAPI.
    - The data is saved to a CSV file for the next stage.
 
 2. **Clean Tweets**
 
-   - `clean_tweets.py` processes the raw data, removing special characters and performing sentiment analysis.
+   - `clean_crypto_tweets.py` processes the raw data, removing special characters and performing sentiment analysis.
    - Cleaned data is saved to a CSV file.
 
 3. **Store Data**
 
-   - `store_tweets.py` saves the cleaned data into a PostgreSQL database.
+   - `store_crypto_tweets.py` saves the cleaned data into a PostgreSQL database.
 
 4. **Analyze Trends**
 
-   - `analyze_trends.py` performs analysis on hashtags and identifies trending coins.
+   - `analyze_crypto_trends.py` performs analysis on hashtags and identifies trending coins.
    - The analysis results are saved as CSV files.
    
 ## File Structure
 
 - **DAGs**: `dags/crypto_twitter_dag.py`
 - **Scripts**:
-  - `scripts/extract_tweets.py`
-  - `scripts/clean_tweets.py`
-  - `scripts/store_tweets.py`
-  - `scripts/analyze_trends.py`
-- **Docker Compose**: `docker-compose.yml`
+  - `scripts/extract_crypto_tweets.py`
+  - `scripts/clean_crypto_tweets.py`
+  - `scripts/store_crypto_tweets.py`
+  - `scripts/analyze_crypto_trends.py`
+- **Docker Compose**: `docker-compose.yaml`
 - **.gitignore**: Excludes `postgres-data/` and sensitive files
 - **README.md**: Project overview and setup instructions
 
@@ -130,10 +130,6 @@ Contributions are welcome! Please create an issue or submit a pull request for a
 ## License
 
 This project is licensed under the MIT License.
-
-## Contact
-
-For questions or suggestions, feel free to reach out to me via [GitHub](https://github.com/xsechaba).
 
 ## Summary
 
