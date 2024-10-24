@@ -1,0 +1,54 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment directory
+venv/
+
+# Airflow logs and SQLite DB (if used)
+logs/
+airflow.db
+
+# Docker files
+*.log
+*.pid
+*.sock
+docker-compose.yml
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment files
+.env
+
+# CSV and data files
+*.csv
+*.json
+
+# Ignore any compiled Python files
+*.so
+
+# Pytest cache directory
+.pytest_cache/
+
+# Temporary files
+*.tmp
+*.temp
+
+# MacOS system files
+.DS_Store
+
+# Backup files
+*.bak
+*.swp
+
+# VSCode settings
+.vscode/
+
+# Exclude API keys or any secrets file
+secrets/
+.env 
+
+postgres-data/
+
